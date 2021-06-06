@@ -7,6 +7,7 @@
         main h1 {
             color: #fff;
             background-color: #f44336;
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -14,9 +15,27 @@
 <body>
     <header></header>
     <main>
-        <h1>Class 1 Lab</h1>
+        <h1 style="line-height:50px; text-align:center">Class 1 Lab</h1>
+        <p style="color:#dfeeea; background:#2f5d62; padding:10px">What is your name?</p>
+        <p style="color:#a7c4bc; background:#5e8b7e; padding:10px">Where are you from?</p>
+        <p style="color:#ffeda3; background:#232323; padding:10px">What is your favorite car?</p>
+        <p style="color:#f6e5e9; background:#962d2d; padding:10px">What country would you like to visit?</p>
     </main>
     <footer></footer>
+
+    <script>
+        let userName = prompt("What is your name?");
+        let country = prompt("Where are you from?");
+        let carName = prompt("What is your favorite car?");
+        let countryVist = prompt("What country would you like to visit?");
+
+        alert('Welcome ' + userName + ' you are from ' + country + ' you would like to drive ' + carName + ' while you visit ' + countryVist);
+
+        console.log("What is your name? ", userName);
+        console.log("Where are you from? ", country);
+        console.log("What is your favorite car? ", carName);
+        console.log("What country would you like to visit? ", countryVist);
+    </script>
 </body>
 
 </html>
